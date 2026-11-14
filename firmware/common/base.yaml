@@ -1,0 +1,7 @@
+packages:
+  esphome: !include esphome.yaml
+  logger: !include logger.yaml
+  wifi: !include wifi.yaml
+  api: !include api.yaml
+  captive-portal: !include captive-portal.yaml
+  ota: !include ota.yaml

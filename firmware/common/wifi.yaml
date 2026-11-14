@@ -1,0 +1,36 @@
+# Docs: https://esphome.io/components/wifi
+---
+packages:
+  - wifi:
+      min_auth_mode: WPA2
+      ap: {}
+
+wifi: |
+  # set ns = namespace(cfg={})
+
+  # set has_ssid = wifi_ssid is defined and wifi_ssid != ""
+  # set has_pass = wifi_password is defined and wifi_password != ""
+
+  # if has_ssid
+  # set ns.cfg = dict(ns.cfg, **{"ssid": wifi_ssid})
+  # endif
+
+  # if has_pass
+  # set ns.cfg = dict(ns.cfg, **{"password": wifi_password})
+  # endif
+
+  # set ap = namespace(cfg={})
+
+  # if wifi_ap_ssid is defined and wifi_ap_ssid != ""
+  # set ap.cfg = dict(ap.cfg, **{"ssid": wifi_ap_ssid})
+  # endif
+
+  # if wifi_ap_password is defined and wifi_ap_password != ""
+  # set ap.cfg = dict(ap.cfg, **{"password": wifi_ap_password})
+  # endif
+
+  # if ap.cfg != {}
+  # set ns.cfg = dict(ns.cfg, **{"ap": ap.cfg})
+  # endif
+
+  ${ns.cfg}

@@ -1,0 +1,15 @@
+packages:
+  - wifi:
+      output_power: 8.5
+      power_save_mode: none
+
+wifi: |
+  # set ns = namespace(cfg={})
+
+  # if wifi_ssid is defined and wifi_ssid != ""
+  # set ns.cfg = dict(ns.cfg, **{
+      "fast_connect": true
+    })
+  # endif
+
+  ${ns.cfg}

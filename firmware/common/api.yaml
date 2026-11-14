@@ -1,0 +1,14 @@
+# Docs: https://esphome.io/components/api
+---
+api: |
+  # set ns = namespace(cfg={})
+
+  # if api_encryption_key is defined and api_encryption_key != ""
+  # set ns.cfg = dict(ns.cfg, **{
+      "encryption": {
+        "key": api_encryption_key
+      }
+    })
+  # endif
+
+  ${ns.cfg}

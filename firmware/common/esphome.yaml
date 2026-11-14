@@ -1,0 +1,21 @@
+# Docs: https://esphome.io/components/esphome
+---
+substitutions:
+  device_id: ${(device_name + "-" + (device_suffix|string|lower)) if device_suffix is defined else device_name}
+
+esphome: |
+  # set ns = namespace(cfg={})
+
+  # set has_suffix = device_suffix is defined
+
+  # set name = device_name + "-" + (device_suffix | string | lower) if has_suffix else device_name
+  # set friendly_name =  device_friendly_name + " " + (device_suffix | string) if has_suffix else device_friendly_name
+  # set name_add_mac_suffix = "false" if has_suffix else (enable_mac_suffix | default("true"))
+
+  # set ns.cfg = dict(ns.cfg, **{
+      "name": name,
+      "friendly_name": friendly_name,
+      "name_add_mac_suffix": name_add_mac_suffix
+    })
+
+  ${ns.cfg}

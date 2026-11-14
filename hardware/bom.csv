@@ -1,0 +1,23 @@
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet
+C1,1,22u,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+"C2,C6,C7",3,0.1u,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+C3,1,1u,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+C4,1,10u,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+C5,1,100u,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+C8,1,0.1u 275v,,,,Capacitor_THT:C_Rect_L13.0mm_W6.0mm_P10.00mm_FKS3_FKP3_MKS4,
+D1,1,LED_Small,,,,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,
+F1,1,T500mA,,,,Fuse:Fuse_Littelfuse_395Series,
+J1,1,Screw_Terminal_01x02,,,,TerminalBlock_RND:TerminalBlock_RND_205-00012_1x02_P5.00mm_Horizontal,
+J2,1,Screw_Terminal_01x06,,,,TerminalBlock_RND:TerminalBlock_RND_205-00016_1x06_P5.00mm_Horizontal,
+J3,1,Conn_01x07_Socket,,,,Connector_JST:JST_XH_B7B-XH-A_1x07_P2.50mm_Vertical,
+J4,1,Conn_01x04_Socket,,,,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,
+J5,1,Conn_01x04_Pin,,,,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+"K1,K2,K3,K4,K5,K6",6,HF46F_005-HS1,,,,Relay_THT:HF46F_005-HS1,
+PS1,1,HLK-5M05,,,,Converter_ACDC:Converter_ACDC_Hi-Link_HLK-5Mxx,http://h.hlktech.com/download/ACDC%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%975W%E7%B3%BB%E5%88%97/1/%E6%B5%B7%E5%87%8C%E7%A7%915W%E7%B3%BB%E5%88%97%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%97%E8%A7%84%E6%A0%BC%E4%B9%A6V2.8.pdf
+"R1,R2",2,10k,,,,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
+R3,1,1k,,,,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
+RV1,1,MOV  470v,,,,Varistor:RV_Disc_D7mm_W4.5mm_P5mm,
+"SW_BOOT1,SW_RST1",2,SW_SPST,,,,Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS,
+U1,1,ESP32-WROOM-E,,,,PCM_Espressif:ESP32-WROOM-32E,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+U2,1,AP2112K-3.3,,,,Package_TO_SOT_SMD:SOT-23-5,https://www.diodes.com/assets/Datasheets/AP2112.pdf
+U3,1,ULN2803A,,,,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm,http://www.ti.com/lit/ds/symlink/uln2803a.pdf

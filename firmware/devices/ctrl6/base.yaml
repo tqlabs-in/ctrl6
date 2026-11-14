@@ -1,0 +1,57 @@
+substitutions:
+  device_name: ctrl6
+  device_friendly_name: CTRL6
+  wifi_ap_password: tqlabs.in
+  enable_mac_suffix: true
+
+defaults:
+  common_dir: "../../common"
+  device_dir: "./packages"
+
+packages:
+  common: !include ${common_dir}/base.yaml
+  board: !include ${device_dir}/board/esp32-wroom-32e.idf.yaml
+  wifi.improved-stability: !include ${common_dir}/wifi/improved-stability.yaml
+
+  led.builtin: !include ${device_dir}/led-builtin.yaml
+  led.builtin.wifi-indication: !include ${device_dir}/led-builtin/wifi-indication.yaml
+
+esphome:
+  comment: CTRL 6
+  project:
+    name: TQLabs.CTRL6
+    version: 1.0.0
+
+safe_mode:
+  boot_is_good_after: 20s
+
+web_server:
+  port: 80
+  version: 3
+  log: false
+  local: true
+
+switch:
+  - !include
+    file: "${device_dir}/relay.yaml"
+    vars: { suffix: 1, gpio: GPIO16 }
+
+  - !include
+    file: "${device_dir}/relay.yaml"
+    vars: { suffix: 2, gpio: GPIO17 }
+
+  - !include
+    file: "${device_dir}/relay.yaml"
+    vars: { suffix: 3, gpio: GPIO18 }
+
+  - !include
+    file: "${device_dir}/relay.yaml"
+    vars: { suffix: 4, gpio: GPIO19 }
+
+  - !include
+    file: "${device_dir}/relay.yaml"
+    vars: { suffix: 5, gpio: GPIO21 }
+
+  - !include
+    file: "${device_dir}/relay.yaml"
+    vars: { suffix: 6, gpio: GPIO22 }

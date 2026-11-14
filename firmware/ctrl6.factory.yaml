@@ -1,0 +1,2 @@
+packages:
+  device: !include ./devices/ctrl6/base.yaml

@@ -1,0 +1,13 @@
+---
+defaults:
+  suffix: 0
+  gpio: -1
+  inverted: false
+
+platform: gpio
+id: plug_${suffix|string|lower}
+name: Plug ${suffix|string}
+restore_mode: RESTORE_DEFAULT_OFF
+pin:
+  number: ${gpio}
+  inverted: ${inverted}

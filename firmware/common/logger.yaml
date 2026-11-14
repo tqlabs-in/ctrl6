@@ -1,0 +1,4 @@
+# Docs: https://esphome.io/components/logger
+---
+logger:
+  level: ${logger_level | default("DEBUG")}
