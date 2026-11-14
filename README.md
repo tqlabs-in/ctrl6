@@ -58,6 +58,10 @@ ESP32-WROOM-32E based 6-channel mains relay controller. Powered directly from th
   </table>
 </div>
 
+## 🧲 Useful Links
+
+- [Interactive BOM](https://htmlpreview.github.io/?https://raw.githubusercontent.com/tqlabs-in/ctrl6/main/hardware/ibom.html)
+
 ## ⚖️ License
 
 Licensed under [CERN-OHL-S-2.0](LICENCE).
